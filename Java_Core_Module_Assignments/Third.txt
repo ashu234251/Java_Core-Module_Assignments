@@ -1,0 +1,153 @@
+Q1.Write a simple Banking System program by using OOPs concept where you can get account Holder name, balance etc?
+   class Bank
+   {
+	String name;
+	Integer balance;
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public Integer getBalance() {
+		return balance;
+	}
+	public void setBalance(Integer balance) {
+		this.balance = balance;
+	}
+    }
+
+    public class practice {
+
+	public static void main(String[] args)
+	{
+		Bank b1=new Bank();
+		b1.setBalance(1100000);
+		b1.setName("Ashish Varshney");
+
+		System.out.println("Account Holder Name is: "+b1.getName());
+		System.out.println("Your Balance is: "+b1.getBalance());
+	}
+
+     }
+
+Q2. Write a Program where you inherit method from parent class and show method Overridden Concept?
+    class Parent
+    {
+	public void f1()
+	{
+		System.out.println("This is Parent Class Method..");
+	}
+    }
+    class Child extends Parent
+    {
+	public void f1()
+	{
+		System.out.println("This is Overridden Method..");
+	}
+    }
+
+    public class practice
+    {
+
+	public static void main(String[] args)
+	{
+		Parent p= new Child();
+		p.f1();
+	} 
+     }
+
+Q3.Write a program to show run time polymorphism in java?
+   Same as in Question 2.
+
+Q4.Write a program to show Compile time polymorphism in java?
+   class Parent
+    {
+	public void f1(int x)
+	{
+		System.out.println("This is Parent Class Method..");
+	}
+    }
+    class Child extends Parent
+    {
+	public void f1()
+	{
+		System.out.println("This is Overloaded Method..");
+	}
+    }
+
+    public class practice
+    {
+
+	public static void main(String[] args)
+	{
+		Parent p= new Child();
+		p.f1(10);
+	} 
+     }
+
+Q5. Achieve loose coupling in java by using OOPs concept?
+    class Parent
+    {
+	public void f1(int x)
+	{
+		System.out.println("This is Parent Class Method..");
+	}
+    }
+    class Child extends Parent
+    {
+	public void f1()
+	{
+		System.out.println("This is Overloaded Method..");
+	}
+    }
+
+    public class practice
+    {
+
+	public static void main(String[] args)
+	{
+		Parent p= new Parent();
+		p.f1(10);
+	} 
+     }
+
+Q6. What is the benefit of encapsulation in java?
+    1. Data Hiding: it is a way of restricting the access of our data members by hiding the implementation details. Encapsulation also provides a way
+       for data hiding. The user will have no idea about the inner implementation of the class.
+    2. Increased Flexibility: We can make the variables of the class read-only or write-only depending on our requirements. If we wish to make the
+       variables read-only then we have to omit the setter methods like setName(), setAge(), etc.
+    3. Reusability: Encapsulation also improves the re-usability and is easy to change with new requirements.
+    4. Testing code is easy: Encapsulated code is easy to test for unit testing.
+    5. Freedom to programmer in implementing the details of the system:
+
+Q7.Is java a t 100% Object oriented Programming language? If no why ?
+   No, Java is not 100% object-oriented, as there can be primitive variables in java.
+
+Q8.What are the advantages of abstraction in java?
+   1. It reduces the complexity of viewing things.
+   2. Avoids code duplication and increases reusability.
+   3. Helps to increase the security of an application or program as only essential details are provided to the user.
+   4. It improves the maintainability of the application. 
+   5. It improves the modularity of the application. 
+   6. The enhancement will become very easy because without affecting end-users we can able to perform any type of changes in our internal system. 
+   7. Improves code reusability and maintainability.
+   8. Hides implementation details and exposes only relevant information.
+   9. Provides a clear and simple interface to the user.
+
+Q9.What is an abstraction explained with an Example?
+   Data Abstraction may also be defined as the process of identifying only the required characteristics of
+   an object ignoring the irrelevant details. The properties and behaviors of an object differentiate it from 
+   other objects of similar type and also help in classifying/grouping the objects.
+
+   Consider a real-life example of a man driving a car. The man only knows that pressing the accelerators will increase the speed of a car or applying 
+   brakes will stop the car, but he does not know how on pressing the accelerator the speed is actually increasing, he does not know about the inner
+   mechanism of the car or the implementation of the accelerator, brakes, etc in the car. This is what abstraction is. 
+
+Q10.What is the final class in Java?
+    A final class is declared with a final keyword. Final class can not participate in inheritance.
+    If a class is declared as final we can’t extend the functionality of that class i.e we can’t create
+    a child class for that class i.e inheritance is not possible for final classes. Every method present
+    inside the final class is always final y default but every variable present inside the final class need not be final. 
+
+
